@@ -3,6 +3,7 @@ import AllRouters from './AllRouters/AllRouters';
 import { Auth0Provider } from '@auth0/auth0-react';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         }}>
         <Navbar />
         <AllRouters />
+        <Footer/>
       </Auth0Provider>
     </BrowserRouter>
   );
