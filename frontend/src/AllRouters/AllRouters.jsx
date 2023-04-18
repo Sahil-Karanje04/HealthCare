@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { Routes,Route } from "react-router-dom";
 import React from 'react'
 import Home from "../Pages/Home/Home"
 import Contact from "../Pages/Contact us/Contact";
@@ -9,7 +9,6 @@ import User from '../Pages/User/User';
 
 const AllRouters = () => {
   return (
-    <BrowserRouter>
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path="/contact" element={<Contact/>} />
@@ -17,7 +16,6 @@ const AllRouters = () => {
             <Route path="/blog" element={<Blog/>} />
             <Route path="/user" element={<User/>} />
         </Routes>
-    </BrowserRouter>
   )
 }
 
