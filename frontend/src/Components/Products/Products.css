@@ -1,0 +1,27 @@
+.Product-container{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Product-card{
+    padding: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 25rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.pr-card-img{
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pr-card-text{
+    height: 35%;
+    padding: 0 .3rem;
+}

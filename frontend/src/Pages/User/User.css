@@ -1,0 +1,26 @@
+.user-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order-products{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.oreder-review{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.selected-products{
+    width: 100%;
+}

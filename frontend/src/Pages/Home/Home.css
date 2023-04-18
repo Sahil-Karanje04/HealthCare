@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body{
+    background-color: #f5ece3;
+}
+
+.container{
+    height: 80vh;
+}
+
+.heading{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading h1{
+    display: inline;
+    font-size: 3rem;
+}
+
+.poster{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.poster-text-container{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.poster-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+}
+
+.poster-text p,.poster-text h1{
+    margin: 0;
+}
+
+.poster-text-para p{
+    font-size: small;
+}
+
+.poster-text-btn{
+    background-color: #092439;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 8rem;
+    padding: .3rem 0;
+    transition: .3s;
+}
+
+.poster-text-btn:hover{
+    width: 8.7rem;
+}
+
+.trending{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+footer{
+    background-color: #092439;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-left{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ft-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #ffd101;
+    color: black;
+}
+
+.cpr{
+    text-align: center;
+} 
+
+.bestSellings{
+    background-color: gainsboro;
+    padding: 1.5rem;
+}
+
+/* utility */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* responsive */
+
+@media screen and (max-width:850px) {
+    .poster-text h1{
+        font-size: 1rem;
+    }
+    .poster-text p{
+        font-size: .6rem;
+    }
+    .poster-text-btn{
+        width: 5rem;
+        font-size: .5rem;
+    }
+    .poster-logo img{
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .poster-text-container{
+        right: 15%;
+        top: 20%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .poster-text-container{
+        right: 10%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width:530px){
+    .poster-text-container{
+        right: 5%;
+        top: 10%;
+        height: 40%;
+    }
+    .poster-text h1{
+        font-size: .8rem;
+    }
+    .poster-text p{
+        font-size: .6rem;
+    }
+    .poster-text-btn{
+        width: 3rem;
+        font-size: .4rem;
+    }
+    .poster-logo img{
+        width: 2rem;
+    }
+}
