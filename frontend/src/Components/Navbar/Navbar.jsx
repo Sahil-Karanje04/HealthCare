@@ -4,7 +4,7 @@ import search from '../../Assets/search_icon.jpg'
 import user_logo from '../../Assets/user_icon.png'
 import cart from '../../Assets/cart_icon.png'
 import { useAuth0 } from "@auth0/auth0-react";
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.jpg'
 import ham from '../../Assets/bars-solid (1).svg'
 import { Link } from 'react-router-dom'
 
