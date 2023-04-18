@@ -5,10 +5,7 @@ import user_logo from '../../Assets/user_icon.png'
 import cart from '../../Assets/cart_icon.png'
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from '../../Assets/logo.png'
-<<<<<<< HEAD
 import ham from '../../Assets/bars-solid (1).svg'
-=======
->>>>>>> 8379b52bb7323af173d603a4784aeb46cbc641b8
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
