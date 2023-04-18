@@ -1,8 +1,10 @@
 import React from 'react'
-
+import './PatientProfile.css'
 const PatientProfile = () => {
   return (
-    <div>PatientProfile</div>
+    <div>
+        <h3> Hello {}</h3>
+    </div>
   )
 }
 

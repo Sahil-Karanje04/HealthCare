@@ -7,7 +7,6 @@ import Blog from '../Pages/Blog/Blog'
 import User from '../Pages/User/User';
 import PatientProfile from "../Components/PatientProfiles/PatientProfile";
 
-
 const AllRouters = () => {
   return (
         <Routes>
