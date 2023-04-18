@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import DoctorProfile from './Pages/DoctorProfile/DoctorProfile';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <DoctorProfile/>
     </div>
   );
 }
