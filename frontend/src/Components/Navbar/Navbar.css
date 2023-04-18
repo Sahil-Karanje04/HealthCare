@@ -1,3 +1,234 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+   font-family: 'Roboto', sans-serif;
+}
+
+.Navbar{
+   background-color: #f5ece3;
+}
+
+.navbar-container{
+   justify-content: space-between;
+   padding: 1rem;
+   height: 2rem;
+}
+
+.logo{
+   cursor: pointer;
+   padding-bottom: .5rem;
+}
+
+.logo h1{
+   display: inline;
+}
+
+.list ul li{
+   list-style: none;
+   padding: 0 1rem;
+   cursor: pointer;
+   transition: .2s;
+   color: #092439;
+   font-weight: bold;
+}
+
+.list ul li:hover{
+   font-size: 1.1rem;
+}
+
+.right-nav{
+   width: 90%;
+   justify-content: end;
+}
+
+.searchbar{
+   width: 100%;
+   justify-content: end;
+}
+
+.searchbar input{
+   width: 80%;
+   padding: .23rem 2rem;
+   animation-name: width;
+   animation-duration: 2s;
+}
+
+.searchbar input:focus{
+   outline: none;
+}
+
+.btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: .4rem;
+   cursor: pointer;
+   border-radius: 50%;
+   margin-left: 1rem;
+   transition: .2s;
+   border: 1px solid black;
+   background-color: #020217;
+}
+
+.lg-btn{
+   background-color: #092439;
+   color: white;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: .4rem;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-left: 1rem;
+   transition: ease-in-out .2s;
+   border: 1px solid black;
+}
+
+.btn:hover{
+   padding: .5rem;
+}
+
+.lg-btn:hover{
+   padding: .4rem .6rem;
+}
+
+.ham-container{
+   transition: .3s ease-in-out;
+   animation-name: dive;
+   animation-duration: 2s;
+   position: absolute;
+   width: 100%;
+   background-color: white;
+   z-index: 100;
+}
+
+.hm-ul{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.hm-li{
+   padding: .8rem 1rem;
+   border-bottom: .5px solid #c9cccf;
+   width: 100%;
+   text-align: center;
+}
+
+.ham-logo{
+   display: none;
+}
+#ham-hr{
+   display: none;
+}
+
+.ham-btns{
+   display: none;
+}
+
+.hamSearch{
+   display: none;
+   width: 100%;
+   padding: 2% 0;
+   background-color: white;
+   justify-content: center;
+   align-items: center;
+   transition: .3s;
+}
+
+#ham-search-input{
+   width: 70%;
+   padding: .23rem 2rem;
+}
+
+/* utility classes */
+.flex{
+   display: flex;
+   align-items: center;
+}
+
+.hidden{
+   display: none;
+}
+
+.block{
+   display: block;
+}
+
+/* animation */
+
+@keyframes width {
+   from{
+       width: 0%;
+   }
+   to{
+       width: 80%;
+   }
+}
+
+@keyframes dive {
+   from{
+       transform: translateY(-100%);
+   }to{
+       transform: translateY(0%);
+   }
+}
+
+/* responsive */
+
+@media screen and (max-width:900px) {
+   .ham-icon{
+       display: block;
+       width: 2rem;
+   }
+   .left-nav{
+       display: none;
+   }
+
+   .ham-logo{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 10px;
+   }
+   #ham-hr{
+       display: block;
+   }
+   
+}
+
+@media screen and (max-width:500px){
+   #user-btn,#cart-btn,#search-btn{
+       display: none;
+   }
+   .right-nav{
+       width: auto;
+   }
+   .ham-btns{
+       display: inline-block;
+       position: fixed;
+       z-index: 100;
+       bottom: 1rem;
+       left: 85%;
+   }
+   .ham-btns-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+       width: max-content;
+       height: 5rem;
+   }
+   .ham-logo{
+       margin-left: 2rem;
+   }
+   .hamSearch{
+       display: flex;
+   }
+}
+=======
 .logo{
     width: 70px;
 }
@@ -38,3 +269,4 @@
     padding:.4rem .6rem;
  } 
  
+>>>>>>> 8379b52bb7323af173d603a4784aeb46cbc641b8

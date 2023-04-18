@@ -1,23 +1,31 @@
-import React from 'react'
-import { useAuth0 } from "@auth0/auth0-react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import PatientProfiles from "../../Components/PatientProfiles/PatientProfiles";
 import './User.css'
-import CartProduct from '../../Components/Cart-Product/CartProduct';
 
 const User = () => {
-    const { user } = useAuth0();
+  const [patientsData, setPatientsData] = useState([]);
+
+  const fetchData = async () => {
+    const response = await axios.get("http://localhost:4000/getPatientsData");
+    setPatientsData(response.data);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className='User-info-container'>
-        <div className="name"><hr /><h1 style={{textAlign:"center"}}>{user.name}</h1><hr /> </div>
-        <div className="user-cart">
-            <div className="order-products">
-                <h3 style={{textAlign: "center"}}>Selected Products</h3>
-                <div className="selected-products">
-                    <CartProduct/>
-                </div>
-            </div>
-
-            <div className="oreder-review">
-                <h3>orderreview</h3>
+        <div className="user-info-left">
+            <div className="profile-pic"></div>
+            <h3>Dr.Sahil</h3>
+            <h3 style={{color:"gray"}}>Qualifications..</h3>
+        </div>
+        <div className="user-info-right">
+            <h2 style={{textAlign:"center"}}>My patient's profiles</h2>
+            <div className="patient-container">
+                <PatientProfiles list={patientsData}/>
             </div>
         </div>
     </div>
@@ -25,3 +33,9 @@ const User = () => {
 }
 
 export default User
+
+
+
+
+
+

@@ -5,7 +5,7 @@ import Contact from "../Pages/Contact us/Contact";
 import About from '../Pages/About/About'
 import Blog from '../Pages/Blog/Blog'
 import User from '../Pages/User/User';
-
+import PatientProfile from "../Components/PatientProfiles/PatientProfile";
 
 const AllRouters = () => {
   return (
@@ -15,6 +15,7 @@ const AllRouters = () => {
             <Route path="/about" element={<About/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path="/user" element={<User/>} />
+            <Route path="/patient" element={<PatientProfile/>} />
         </Routes>
   )
 }

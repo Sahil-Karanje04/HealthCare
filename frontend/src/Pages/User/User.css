@@ -1,26 +1,38 @@
-.user-cart{
+.User-info-container{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-color: #0cb8b6;
+    padding: 2rem;
+    justify-content: space-between;
+    height: 100%;
 }
-
-.order-products{
-    width: 60%;
+.user-info-left{
+    width: 30%;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-info-right{
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    width: 68%;
 }
 
-.oreder-review{
-    width: 35%;
+.patient-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    height: 80%;
 }
-
-.selected-products{
-    width: 100%;
+.profile-pic{
+    height: 6rem;
+    width: 6rem;
+    border: 8px gray solid;
+    border-radius: 50%;
+    background: url('../../Assets/user_icon.png') round;
 }
