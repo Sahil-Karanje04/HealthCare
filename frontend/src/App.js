@@ -1,7 +1,7 @@
 import './App.css';
 import AllRouters from './AllRouters/AllRouters';
 import { Auth0Provider } from '@auth0/auth0-react';
-import Navbar from './Components/Navbar/Navbar';
+// import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 
@@ -14,7 +14,7 @@ function App() {
         authorizationParams={{
           redirect_uri: window.location.origin
         }}>
-        <Navbar />
+        {/* <Navbar /> */}
         <AllRouters />
         <Footer/>
       </Auth0Provider>
