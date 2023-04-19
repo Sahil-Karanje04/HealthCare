@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+import React, { useState, useRef } from 'react';
+import './Eyegame.css'
+=======
 // import React, { useState, useEffect } from 'react';
 
 // function Eyegame() {
@@ -86,6 +90,7 @@
 // export default Eyegame;
 
 import React, { useState, useRef,useEffect } from 'react';
+>>>>>>> 031cde72189c97cdd6e50b9c55a14f58e8c89b77
 
 function Eyegame() {
 
@@ -95,6 +100,17 @@ function Eyegame() {
   const [score, setScore] = useState(0);
   const intervalRef = useRef(null);
 
+<<<<<<< HEAD
+  const startTimer = () => {
+    intervalRef.current = setInterval(() => {
+      setTimer((prevTimer) => {
+        console.log("Timer tick");
+        setTimer(timer - 1)
+      });
+    }, 1000);
+  };
+
+=======
   const [seconds, setSeconds] = useState(30);
 
   function Timer() {
@@ -126,6 +142,7 @@ function Eyegame() {
 //   }
   
   
+>>>>>>> 031cde72189c97cdd6e50b9c55a14f58e8c89b77
 
   const stopTimer = () => {
     clearInterval(intervalRef.current);
@@ -150,19 +167,44 @@ function Eyegame() {
   };
 
   return (
-    <div>
+    <div className='eyegame-container'>
       <h1>Eye Training Exercise</h1>
       <p>{instruction}</p>
-      
-        <>
-          <div
-            style={{
-              position: 'relative',
-              width: '300px',
-              height: '300px',
-              border: '1px solid black',
-              margin: '20px',
+
+      <>
+        <div
+          style={{
+            position: 'relative',
+            width: '300px',
+            height: '300px',
+            border: '1px solid black',
+            margin: '20px',
+            backgroundColor:"white"
+          }}
+        >
+          <div style={{position: 'absolute',
+              width: '10px',
+              height: '10px',
+              borderRadius: '50%',
+              backgroundColor: 'red',
+              top: `${dotPosition.y}%`,
+              left: `${dotPosition.x}%`,
             }}
+<<<<<<< HEAD
+            onClick={handleClick}
+          ></div>
+        </div>
+        <p style={{backgroundColor: "#0cb8b6",padding:"1rem",borderRadius:"5px"}}>Time remaining: {timer} seconds</p>
+        <p>Score: {score}</p>
+        <button onClick={handleStopClick} style={{backgroundColor: "#0cb8b6",padding:".3rem 1rem",borderRadius:"5px"}}>Stop</button>
+      </>
+
+      <>
+        <p>Your session has ended</p>
+        <button onClick={handleStartClick} style={{backgroundColor: "#0cb8b6",padding:".3rem 1rem",borderRadius:"5px"}}>Start</button>
+      </>
+
+=======
           >
             <div
               style={{
@@ -187,6 +229,7 @@ function Eyegame() {
           <button onClick={handleStartClick}>Start</button>
         </>
      
+>>>>>>> 031cde72189c97cdd6e50b9c55a14f58e8c89b77
     </div>
   );
 }

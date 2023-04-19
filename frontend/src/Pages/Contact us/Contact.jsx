@@ -77,7 +77,7 @@ const Contact = () => {
               <textarea name='contacttext' onChange={handleChange}></textarea>
             </div>
             <div >
-              <input type="submit" value="Send" />
+              <input type="submit" value="Send" style={{padding:".3rem 1rem",backgroundColor:"#0cb8b6",borderRadius:"5px"}} />
             </div>
           </form>
         </div>
