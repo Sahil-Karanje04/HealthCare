@@ -16,6 +16,10 @@
 .logo{
    cursor: pointer;
    padding-bottom: .5rem;
+   width: 70px;
+}
+.logo img{
+   width: 100%;
 }
 
 .logo h1{
@@ -36,8 +40,8 @@
 }
 
 .right-nav{
-   width: 90%;
-   justify-content: end;
+   /* width: 90%; */
+   /* justify-content: end; */
 }
 
 .searchbar{
@@ -56,7 +60,7 @@
    outline: none;
 }
 
-.btn{
+.custom-btn{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -84,7 +88,7 @@
    border: 1px solid black;
 }
 
-.btn:hover{
+.custom-btn:hover{
    padding: .5rem;
 }
 
@@ -227,6 +231,7 @@
        display: flex;
    }
 }
+
 .logo{
     width: 70px;
 }

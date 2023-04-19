@@ -8,18 +8,6 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const {   logout, isAuthenticated } = useAuth0();
 
-  // function toggle() {
-  //     const search_input = document.getElementById("search-input");
-
-  //     search_input.classList.toggle("block");
-  // };
-
-  // function hamToggle() {
-  //     const ham_container = document.querySelector(".ham-container");
-
-  //     ham_container.classList.toggle("block");
-  // }
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
