@@ -6,6 +6,7 @@ import About from '../Pages/About/About'
 import Blog from '../Pages/Blog/Blog'
 import User from '../Pages/User/User';
 import PatientProfile from "../Components/PatientProfiles/PatientProfile";
+import SignInOption from "../Pages/sign-in-option/SignInOption";
 
 const AllRouters = () => {
   return (
@@ -16,6 +17,8 @@ const AllRouters = () => {
             <Route path="/blog" element={<Blog/>} />
             <Route path="/user" element={<User/>} />
             <Route path="/patient" element={<PatientProfile/>} />
+            <Route path="/SignInOption" element={<SignInOption/>} />
+            
         </Routes>
   )
 }
