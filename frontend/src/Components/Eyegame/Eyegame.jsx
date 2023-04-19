@@ -3,7 +3,7 @@ import './Eyegame.css'
 import React, { useState, useRef, useEffect } from "react";
 
 function Eyegame() {
-    //   const [timer, setTimer] = useState(30);
+      const [timer, setTimer] = useState(30);
     const [instruction, setInstruction] = useState(
         "Follow the red dot with your eyes"
     );
