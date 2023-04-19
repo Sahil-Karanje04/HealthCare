@@ -85,23 +85,46 @@
 
 // export default Eyegame;
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef,useEffect } from 'react';
 
 function Eyegame() {
-  const [timer, setTimer] = useState(30);
+
+//   const [timer, setTimer] = useState(30);
   const [instruction, setInstruction] = useState('Follow the red dot with your eyes');
   const [dotPosition, setDotPosition] = useState({ x: 50, y: 50 });
   const [score, setScore] = useState(0);
   const intervalRef = useRef(null);
 
-  const startTimer = () => {
-    intervalRef.current = setInterval(() => {
-        setTimer((prevTimer) =>{
-          console.log("Timer tick"); // add this line
-        setTimer(timer - 1)
-      } );
-    }, 1000);
-  };
+  const [seconds, setSeconds] = useState(30);
+
+  function Timer() {
+    const [seconds, setSeconds] = useState(30);
+  
+    useEffect(() => {
+      // Decrease the seconds every second until it reaches 0
+      const interval = setInterval(() => {
+        if (seconds > 0) {
+          setSeconds((prevSeconds) => prevSeconds - 1);
+        }
+      }, 1000);
+  
+      // Clear the interval when the component is unmounted
+      return () => clearInterval(interval);
+    }, [seconds]);
+
+    return <div>{seconds} seconds left</div>;
+  
+  }
+
+//   const startTimer = () => {
+//     let element = document.getElementById("timer");
+//     setInterval(function() { 
+//         let i = 30;
+//             setTimer(i);
+//         i = i-1;
+//     }, 1000);
+//   }
+  
   
 
   const stopTimer = () => {
@@ -118,7 +141,7 @@ function Eyegame() {
     setScore(0);
     setTimer(30);
     setInstruction('Follow the red dot with your eyes');
-    startTimer();
+    Timer();
   };
 
   const handleStopClick = () => {
@@ -154,7 +177,7 @@ function Eyegame() {
               onClick={handleClick}
             ></div>
           </div>
-          <p>Time remaining: {timer} seconds</p>
+          <p id='time'>Time remaining: {seconds} seconds</p>
           <p>Score: {score}</p>
           <button onClick={handleStopClick}>Stop</button>
         </>
