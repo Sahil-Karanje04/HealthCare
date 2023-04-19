@@ -41,7 +41,7 @@ const Footer = () => {
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <span className="footer-contact">info@oyefish.in</span>
+                <span className="footer-contact">info@medicare.in</span>
               </div>
             </div>
           </div>
@@ -94,42 +94,42 @@ const Footer = () => {
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Fresh Fish
+                  Doctor
                 </Link>
               </li>
               <li className="footer-list-items">
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Prawns
+                  Patients
                 </Link>
               </li>
               <li className="footer-list-items">
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Shell Fish
+                  Admin
                 </Link>
               </li>
               <li className="footer-list-items">
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Dry Fish
+                 Lazy Eye
                 </Link>
               </li>
               <li className="footer-list-items">
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Special Pre-Order(+Wholesale)
+                  Eye game
                 </Link>
               </li>
               <li className="footer-list-items">
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Evening Market
+                  Blogs
                 </Link>
               </li>
               <li className="footer-list-items">
@@ -148,7 +148,7 @@ const Footer = () => {
                 {" "}
                 <Link className="footer-list-link" to="/">
                   {" "}
-                  Why OyeFish
+                  Why Medicare
                 </Link>
               </li>
               <li className="footer-list-items">

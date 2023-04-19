@@ -2,6 +2,7 @@ import React from 'react'
 import doctor from './doctor.avif'
 import './SignInOption.css'
 import { useAuth0 } from "@auth0/auth0-react";
+import patient from './patient.png'
 
 
 const SignInOption = () => {
@@ -17,7 +18,7 @@ const SignInOption = () => {
     </button>
     <button onClick={() => loginWithRedirect()}>
       <div class="card">
-        <img src={doctor} alt="Card-img"/>
+        <img src={patient} alt="Card-img"/>
         <h2>Patient</h2>
         <p>Want best treatment</p>
       </div>
