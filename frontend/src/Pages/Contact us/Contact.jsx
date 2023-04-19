@@ -35,7 +35,7 @@ const Contact = () => {
         <p>Feel Free To contact us.</p>
         <p>We are Here To Help You.</p>
       </div>
-      <div className="container">
+      <div className="contact-container">
         <div className="contactInfo">
           <div>
             <div className="box">

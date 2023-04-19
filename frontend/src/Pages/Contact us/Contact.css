@@ -34,7 +34,7 @@
     color: #fff;
 }
 
-.container {
+.contact-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -42,7 +42,7 @@
     margin: 30px;
 }
 
-.container .contactInfo {
+.contact-container .contactInfo {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -170,15 +170,15 @@
         padding: 50px;
     }
 
-    .container {
+    .contact-container {
         flex-direction: column;
     }
 
-    .container .contactInfo {
+    .contact-container .contactInfo {
         margin-bottom: 40px;
     }
 
-    .container .contactInfo {
+    .contact-container .contactInfo {
         width: 100%;
     }
 }
