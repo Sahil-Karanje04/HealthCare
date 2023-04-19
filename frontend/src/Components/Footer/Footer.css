@@ -2,7 +2,11 @@
 .main-footer {
     /* background: url('/assets/images/footer/oye-fish-page-main-footer.jpg'); */
     margin-bottom: 0px;
+<<<<<<< HEAD
     background-color: #f1f1f1;
+=======
+    background-color: #dfe2f0;
+>>>>>>> 031cde72189c97cdd6e50b9c55a14f58e8c89b77
 }
 
 .footer-icon {
