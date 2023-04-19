@@ -1,11 +1,12 @@
-.User-info-container{
+.User-info-container {
     display: flex;
     background-color: #0cb8b6;
     padding: 2rem;
     justify-content: space-between;
     height: 100%;
 }
-.user-info-left{
+
+.user-info-left {
     width: 30%;
     height: 80vh;
     border-radius: 10px;
@@ -16,23 +17,57 @@
     align-items: center;
 
 }
-.user-info-right{
+
+.user-info-right {
     height: 80vh;
     background-color: white;
     border-radius: 10px;
     width: 68%;
 }
 
-.patient-container{
+.patient-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80%;
 }
-.profile-pic{
+
+.profile-pic {
     height: 6rem;
     width: 6rem;
     border: 8px gray solid;
     border-radius: 50%;
     background: url('../../Assets/user_icon.png') round;
+}
+
+/* responsive */
+
+@media screen and (max-width:950px) {
+    .User-info-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .user-info-left {
+        width: 100%;
+    }
+
+    .user-info-right {
+        width: 100%;
+    }
+
+    .profile-pic {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width:350px){
+    .PatientProfile-container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .user-info-right {
+        height: 100%;
+    }
 }

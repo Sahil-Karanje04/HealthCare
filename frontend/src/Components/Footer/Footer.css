@@ -2,12 +2,13 @@
 .main-footer {
     /* background: url('/assets/images/footer/oye-fish-page-main-footer.jpg'); */
     margin-bottom: 0px;
+    background-color: #f1f1f1;
 }
 
 .footer-icon {
     color: #5075FA;
     width: 20px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .footer-contact {
@@ -133,3 +134,4 @@
     color: rgba(0, 0, 0, 0.507);
     font-size: 14px;
 }
+

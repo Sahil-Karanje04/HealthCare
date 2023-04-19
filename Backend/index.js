@@ -26,7 +26,8 @@ app.post("/sendContact",cors(),async(req,res)=>{
         contacttext
     };
     await contactus.insertMany([data]);
-})
+});
+
 
 app.listen(process.env.PORT || PORT,()=>{
     console.log(`server running on ${PORT}`)
